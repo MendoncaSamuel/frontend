@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <title>Fale Conosco</title>
+    <style>
+        .pai {
+            min-height: 100vh;
+        }
+
+        .filho {
+            padding: 75px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container pai d-flex justify-content-center align-items-center align-BaseLine">
+        <div class="filho border border-1 border-primary">
+            <h3 class="text-center">Deixe seu Feedback</h3>
+            <form method="post">
+
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label mt-3">Endereço de Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                </div>
+                <div class="mb-3">
+                    <label for="feedback" class="form-label">Seu Feedback</label>
+                    <textarea class="form-control" id="feedback" rows="4" required></textarea>
+                </div>
+                
+                <select class="form-select mt-3" aria-label="Default select example">
+                    <option selected>Dê sua nota para o site</option>
+                    <option value="10">10</option>
+                    <option value="9">9</option>
+                    <option value="8">8</option>
+                    <option value="7">7</option>
+                    <option value="6">6</option>
+                    <option value="5">5</option>
+                    <option value="4">4</option>
+                    <option value="3">3</option>
+                    <option value="2">2</option>
+                    <option value="1">1</option>
+                    <option value="30">0</option>
+                  </select>
+                <a href="profile.html" target="_blank" class="btn btn-dark mt-4">Enviar</a>
+            </form>
+        </div>
+    </div>
+    <script src="bootstrap.bundle.js"> </script>
+</body>
+
+</html>
